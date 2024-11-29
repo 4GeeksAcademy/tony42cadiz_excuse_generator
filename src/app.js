@@ -12,20 +12,21 @@ window.onload = function() {
     "during my lunch",
     "while I was prayinhg"
   ];
-
-  let whoRan = Math.floor(Math.random() * who.length);
-  let actionRan = Math.floor(Math.random() * action.length);
-  let whatRan = Math.floor(Math.random() * what.length);
-  let whenRan = Math.floor(Math.random() * when.length);
+  //Renaming Functions
+  let whoItem = Math.floor(Math.random() * who.length);
+  let actionItem = Math.floor(Math.random() * action.length);
+  let whatItem = Math.floor(Math.random() * what.length);
+  let whenItem = Math.floor(Math.random() * when.length);
+  //Unifying Functions
 
   let excuse =
-    who[whoRan] +
+    who[whoItem] +
     " " +
-    action[actionRan] +
+    action[actionItem] +
     " " +
-    what[whatRan] +
+    what[whatItem] +
     " " +
-    when[whenRan];
+    when[whenItem];
 
   document.getElementById("excuse").innerText = excuse;
 };
